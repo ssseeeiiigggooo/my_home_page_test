@@ -1,9 +1,20 @@
 .box {
+  /* 👇 ここが要素自体を中央に寄せる魔法のコード */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* 👇 超重要！最大幅（max-width）を決めないと、横いっぱいに広がって中央寄せに見えなくなります */
+  max-width: 600px; 
+  width: 100%; /* スマホなどの画面が小さい時は、画面幅に合わせて縮むようにします */
+
+  /* ここから下はこれまでの見た目の装飾 */
   padding: 18px 20px;
-  margin: 24px 0;
-  border-left: 4px solid #0076ff; /* 左側の青い線 */
-  background-color: #f0f7ff; /* 薄い青の背景 */
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-left: 4px solid #0076ff;
+  background-color: #f0f7ff;
   border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* ついでに少し影をつけると浮き出ていい感じです */
 }
 
 .title {
