@@ -23,14 +23,3 @@
   color: #333333;
   line-height: 1.6;
 }
-
-/* 💡 アラート用（赤色）のバリエーションも用意 */
-.alertBox {
-  composes: box; /* 上の .box の設定を引き継ぐ */
-  border-left-color: #ff3b30;
-  background-color: #fff2f2;
-}
-.alertTitle {
-  composes: title;
-  color: #c8102e;
-}
